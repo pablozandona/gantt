@@ -21,20 +21,6 @@ const month_names = {
         'November',
         'December'
     ],
-    es: [
-        'Enero',
-        'Febrero',
-        'Marzo',
-        'Abril',
-        'Mayo',
-        'Junio',
-        'Julio',
-        'Agosto',
-        'Septiembre',
-        'Octubre',
-        'Noviembre',
-        'Diciembre'
-    ],
     ru: [
         'Январь',
         'Февраль',
@@ -48,62 +34,6 @@ const month_names = {
         'Октябрь',
         'Ноябрь',
         'Декабрь'
-    ],
-    ptBr: [
-        'Janeiro',
-        'Fevereiro',
-        'Março',
-        'Abril',
-        'Maio',
-        'Junho',
-        'Julho',
-        'Agosto',
-        'Setembro',
-        'Outubro',
-        'Novembro',
-        'Dezembro'
-    ],
-    fr: [
-        'Janvier',
-        'Février',
-        'Mars',
-        'Avril',
-        'Mai',
-        'Juin',
-        'Juillet',
-        'Août',
-        'Septembre',
-        'Octobre',
-        'Novembre',
-        'Décembre'
-    ],
-    tr: [
-        'Ocak',
-        'Şubat',
-        'Mart',
-        'Nisan',
-        'Mayıs',
-        'Haziran',
-        'Temmuz',
-        'Ağustos',
-        'Eylül',
-        'Ekim',
-        'Kasım',
-        'Aralık'
-    ],
-    zh: [
-        '一月',
-        '二月',
-        '三月',
-        '四月',
-        '五月',
-        '六月',
-        '七月',
-        '八月',
-        '九月',
-        '十月',
-        '十一月',
-        '十二月'
     ]
 };
 
@@ -194,7 +124,7 @@ export default {
         return str;
     },
 
-    diff(date_a, date_b, scale = DAY) {
+    diff(date_a, date_b, scale = MINUTE) {
         let milliseconds, seconds, hours, minutes, days, months, years;
 
         milliseconds = date_a - date_b;
